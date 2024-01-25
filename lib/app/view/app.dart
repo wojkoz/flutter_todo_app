@@ -12,7 +12,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return RepositoryProvider.value(
       value: todosRepository,
-      child: AppView(),
+      child: const AppView(),
     );
   }
 }
