@@ -15,7 +15,7 @@ abstract class TodosApi {
   Future<void> saveTodo(Todo todo);
 
   ///Delete `todo` item
-  Future<void> deleteTodo(Todo todo);
+  Future<void> deleteTodo(String id);
 
   ///Remove completed `todo` items
   Future<void> clearCompleted();
