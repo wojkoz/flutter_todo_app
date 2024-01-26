@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:todo_app/feature/home/home_view.dart';
 import 'package:todo_app/l10n/l10n.dart';
 import 'package:todo_app/theme/theme.dart';
 import 'package:todos_repository/todos_repository.dart';
@@ -12,7 +13,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return RepositoryProvider.value(
       value: todosRepository,
-      child: AppView(),
+      child: const AppView(),
     );
   }
 }
@@ -27,7 +28,7 @@ class AppView extends StatelessWidget {
       darkTheme: TodosTheme.light,
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
-      home: const Column(),
+      home: const HomeScreen(),
     );
   }
 }
