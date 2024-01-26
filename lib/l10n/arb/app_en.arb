@@ -24,5 +24,10 @@
         }
     },
     "todosOverviewEmptyText": "",
-    "todosOverviewFilterTooltip": "Filter tooltip"
+    "todosOverviewFilterTooltip": "Filter tooltip",
+    "editTodoAddAppBarTitle": "Add todo",
+    "editTodoEditAppBarTitle": "Edit todo",
+    "editTodoSaveButtonTooltip": "Save tooltip",
+    "editTodoTitleLabel": "Todo title",
+    "editTodoDescriptionLabel": "Todo description"
 }

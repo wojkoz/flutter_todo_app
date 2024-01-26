@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:todo_app/feature/edit_todo/screen/edit_todo_screen.dart';
 import 'package:todo_app/feature/home/cubit/home_cubit.dart';
+import 'package:todo_app/feature/todos_overview/screen/todos_overview_screen.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -13,14 +15,14 @@ class HomeView extends StatelessWidget {
       body: IndexedStack(
         index: selectedTab.index,
         children: const [
-          //todo TodosOverviewScreen(), StatsScreen()
+          TodosOverviewScreen(), //todoImagesScreen()
         ],
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
         shape: const CircleBorder(),
         key: const Key('homeView_addTodo_floatingActionButton'),
-        onPressed: () => {}, //todo Navigator.of(context).push(EditTodoScreen.route()),
+        onPressed: () => Navigator.of(context).push(EditTodoScreen.route()),
         child: const Icon(Icons.add),
       ),
       bottomNavigationBar: BottomAppBar(

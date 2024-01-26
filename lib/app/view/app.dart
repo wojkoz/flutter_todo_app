@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:todo_app/feature/todos_overview/screen/todos_overview_screen.dart';
+import 'package:todo_app/feature/home/home_view.dart';
 import 'package:todo_app/l10n/l10n.dart';
 import 'package:todo_app/theme/theme.dart';
 import 'package:todos_repository/todos_repository.dart';
@@ -28,7 +28,7 @@ class AppView extends StatelessWidget {
       darkTheme: TodosTheme.light,
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
-      home: const TodosOverviewScreen(),
+      home: const HomeScreen(),
     );
   }
 }

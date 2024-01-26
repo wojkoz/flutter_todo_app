@@ -3,6 +3,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:todo_app/feature/edit_todo/screen/edit_todo_screen.dart';
 import 'package:todo_app/feature/todos_overview/bloc/todos_overview_bloc.dart';
 import 'package:todo_app/feature/todos_overview/widgets/todo_list_tile.dart';
 import 'package:todo_app/feature/todos_overview/widgets/todos_overview_filter_button.dart';
@@ -101,9 +102,9 @@ class TodosOverviewView extends StatelessWidget {
                         context.read<TodosOverviewBloc>().add(TodosOverviewTodoDeleted(todo));
                       },
                       onTap: () {
-                        // Navigator.of(context).push(
-                        //   EditTodoPage.route(initialTodo: todo),
-                        // );
+                        Navigator.of(context).push(
+                          EditTodoScreen.route(initialTodo: todo),
+                        );
                       },
                     ),
                 ],
