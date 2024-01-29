@@ -22,6 +22,10 @@ dependencies:
     path: packages/todos_api
   todos_repository:
     path: packages/todos_repository
+  random_quote_api:
+    path: packages/random_quote_api
+  random_quote_repository:
+    path: packages/random_quote_repository
 
 dev_dependencies:
   bloc_test: ^9.1.4

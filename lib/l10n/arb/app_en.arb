@@ -3,5 +3,35 @@
     "counterAppBarTitle": "Counter",
     "@counterAppBarTitle": {
         "description": "Text shown in the AppBar of the Counter Page"
-    }
+    },
+    "todosOverviewOptionsTooltip": "Todos options",
+    "todosOverviewFilterAll": "All",
+    "todosOverviewFilterActiveOnly": "Active only",
+    "todosOverviewFilterCompletedOnly": "Completed only",
+    "todosOverviewOptionsMarkAllIncomplete": "Mark all incomplete",
+    "todosOverviewOptionsMarkAllComplete": "Mark all complete",
+    "todosOverviewOptionsClearCompleted": "Clear completed",
+    "todosOverviewAppBarTitle": "Todos",
+    "todosOverviewErrorSnackbarText": "Error occured!",
+    "todosOverviewUndoDeletionButtonText": "Undo deletion",
+    "todosOverviewTodoDeletedSnackbarText": "Todo {title} was deleted!",
+    "@todosOverviewTodoDeletedSnackbarText": {
+        "placeholders": {
+            "title":{
+                "type": "String",
+                "example": " Read book"
+            }
+        }
+    },
+    "todosOverviewEmptyText": "",
+    "todosOverviewFilterTooltip": "Filter tooltip",
+    "editTodoAddAppBarTitle": "Add todo",
+    "editTodoEditAppBarTitle": "Edit todo",
+    "editTodoSaveButtonTooltip": "Save tooltip",
+    "editTodoTitleLabel": "Todo title",
+    "editTodoDescriptionLabel": "Todo description",
+    "randomQuoteScreenError": "Oops an error has occured!",
+    "randomQuoteScreenGetAnother": "Get another",
+    "randomQuoteScreenTitle": "Quotes",
+    "randomQuoteScreenGetFirst": "Get First Quote"
 }
