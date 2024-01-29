@@ -29,5 +29,9 @@
     "editTodoEditAppBarTitle": "Edit todo",
     "editTodoSaveButtonTooltip": "Save tooltip",
     "editTodoTitleLabel": "Todo title",
-    "editTodoDescriptionLabel": "Todo description"
+    "editTodoDescriptionLabel": "Todo description",
+    "randomQuoteScreenError": "Oops an error has occured!",
+    "randomQuoteScreenGetAnother": "Get another",
+    "randomQuoteScreenTitle": "Quotes",
+    "randomQuoteScreenGetFirst": "Get First Quote"
 }

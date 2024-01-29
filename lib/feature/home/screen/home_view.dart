@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:todo_app/feature/edit_todo/screen/edit_todo_screen.dart';
 import 'package:todo_app/feature/home/cubit/home_cubit.dart';
+import 'package:todo_app/feature/random_quotes/screen/random_quote_screen.dart';
 import 'package:todo_app/feature/todos_overview/screen/todos_overview_screen.dart';
 
 class HomeView extends StatelessWidget {
@@ -15,7 +16,8 @@ class HomeView extends StatelessWidget {
       body: IndexedStack(
         index: selectedTab.index,
         children: const [
-          TodosOverviewScreen(), //todoImagesScreen()
+          TodosOverviewScreen(),
+          RandomQuoteScreen(),
         ],
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
@@ -37,7 +39,7 @@ class HomeView extends StatelessWidget {
             ),
             _HomeTabButton(
               groupValue: selectedTab,
-              value: HomeTab.stats,
+              value: HomeTab.randomQuote,
               icon: const Icon(Icons.show_chart_rounded),
             ),
           ],
